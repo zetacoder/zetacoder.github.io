@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Backend Developer - Alberto Gonzalez</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="backend developer, golang, sql, software engineer, html, css, javascript" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Backend Developer</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="index.html" class="nav-item nav-link">About</a>
+                <a href="index.html" class="nav-item nav-link">Skills</a>
+                <a href="#service" class="nav-item nav-link">Professional Interests</a>
+            </div>
+
+            <div class="navbar-nav me-auto py-0">
+                <a href="#project" class="nav-item nav-link">Projects</a>
+
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    
+
+    <h1 class="task_header">To Do List Application Demo</h1>
+        
+   
+    <video poster="/img/to_do_list_icon.jpg" class="task_video" controls width="854" height="480">
+        <source src="/videos/toDoListDemo.mp4" type="video/mp4" />
+    </video>
+
+
+     <!-- About Start -->
+     <div  class="container-xxl py-3">
+        <div  class="container">
+            <div class="row g-5">
+                <div class="row-cols-auto">
+                    <p class="mb-lg-2">In this video you will see a <b>To Do List Application</b> using <b>Golang</b>, <b>MySQL</b> database using <b>CRUD principles</b> and using a <b>CLI</b> with a menu to interect with the app.</p>
+                <hr>
+                    <div  class="row">
+                        <div class="col-md-3">
+                            <h5 class="border-end pe-3 me-3 mb-0">Application Features</h5>
+                            <br>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>CRUD Application.</p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Connected to MySQL database.</p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Command line interface (CLI).</p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>User friendly.</p>
+                            <br>
+                            <img width="150px" src="img/features_icon.png">
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="border-end pe-3 me-3 mb-0">Tech stack used</h5>
+                            <br>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span>Golang<img width="90" src="img/golang_icon.png"></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>MySQL  <span><img width="90" src="img/mysql_icon.jpg"></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Git  <span><img width="40" src="img/git_icon.png"></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Github  <span><img alt="github" width="40" src="img/github_icon.png"></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>OBS Studio  <img alt="obs_video_recorder" width="40" src="img/obs_icon.png"></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Clipchamp Editor  <img alt="clipchamp_video" width="40" src="img/clipchamp_icon.svg"></span></p>
+                            <br>
+                        </div>
+                        <div  class="col-md-3">
+                            <h5 class="border-end pe-3 me-3 mb-0">Go Packages used</h5>
+                            <br>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span>'bufio' <a target="_blank" href="https://pkg.go.dev/bufio"><b>more info</b></a></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span>'database/sql' <a target="_blank" href="https://pkg.go.dev/database/sql"><b>more info</b></a></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span>'fmt' <a target="_blank" href="https://pkg.go.dev/fmt"><b>more info</b></a></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span>'os' <a target="_blank" href="https://pkg.go.dev/os"><b>more info</b></a></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span>'time' <a target="_blank" href="https://pkg.go.dev/time"><b>more info</b></a></span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span>'go-sql-driver/mysql' <a target="_blank" href="https://pkg.go.dev/github.com/go-sql-driver/mysql"><b>more info</b></a></span></p>
+                            <img width="100px" src="img/packages_icon.png">
+                        </div>
+                        <div  class="col-md-3">
+                            <h5 class="border-end pe-3 me-3 mb-0">Opportunities to improve the app</h5>
+                            <br>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Perform unit tests to check edge cases.</p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Implement some GUI for better user experience.</p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Set a time limit to accomplish the task.</p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Create/implement an API that sends reminders to your email.</p>
+
+                            <img width="100" src="img/bettercode_icon.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- About End -->
+
+
+    <!--Ideas & code base-->
+    
+    <div class="accordion accordion-flush row g-lg-4" id="accordionFlushExample">
+        <div class="accordion-item col-lg-6">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <b>Planification of the project</b>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre><code>
+                TO DO LIST CLI by Zetacoder. From scratch.
+
+                This document is created in order to organize the ideas before the creation of the proyect.
+                Im going to build a clasic TO DO LIST in CRUD model with a CLI from scratch.
+                
+                FEATURES OF THE APP:
+                -Will be managed using CLI with the users inputs.
+                -Will be connected to an MySQL database.
+                -Will contain a MENU with options.
+                -You will be able to: 
+                      1) CREATE new tasks that will be storaged in MySQL database.
+                      2) READ the task already storaged in the db and show it in screen.
+                      3) UPDATE the tasks and modify it. 
+                      4) DELETE the task marked as completed.
+                      5) DELETE the task you not longer want to do.
+                      6) EXIT the program.
+                -The program will be interactive, returning messages in order to enhanced tu user experience.
+                
+                
+                PROJECT STRUCTURE:
+                to-do-list
+                      -main.go ->
+                      -mod.go -> modules to integrate the packages dependency
+                      -sum.go
+                      -crud -> contains the CREATE, READ, UPDATE and DELETE funcs.
+                      -ideas.txt
+                      -to-do-list.exec -> executes the programm.
+                
+                PACKAGES:
+                    _ "github.com/go-sql-driver/mysql" -> A MySQL-Driver for Go's database/sql package
+                    "database/sql" -> Contains funcs to open, prepare, query, manipulate the database and more.
+                    "fmt"
+                      "time"
+                
+                DATA STRUCTURES:
+                -Every TASK have the following structure: 
+                      1) ID of the task --> int
+                      2) Name of the task --> string
+                      3) Description of the task --> string
+                      4) Responsable of the task --> string
+                      5) State of completion --> bool
+                
+                -MySQL Database:
+                      Name of database: to_do_list
+                            Name of table: tasks
+                                  -ID -> TINYINT primary key INCREMENTAL NOT NULL
+                                  -NAME_TASK -> TINYTEXT NOT NULL
+                                  -DESCRIPTION -> TINYTEXT NOT NULL
+                                  -RESPONSABLE -> TINYTEXT NOT NULL
+                                  -COMPLETED -> BOOL (0 for false, 1 for true.)
+                
+                
+                LOGICAL STEPS OF THE APP:
+                1) Create the to_do_list DATABASE on MYSQL. 
+                2) Connect to DATABASE
+                
+                3) Salute the user and show the MENU and INSTRUCTIONS.
+                *show instructions
+                
+                      (1) CREATE task to do
+                      (2) READ the tasks
+                      (3) UPDATE the task
+                      (4) MARK the task as completed.
+                      (5) DELETE task.
+                      (6) Exit the programm.
+                
+                4) Scan the answer and executes the func dependening on the option.
+                
+                5) Return the result on screen of the func. Repeat main menu (step 3).
+                
+                6) If option selected 6, exit programm.                
+                </code></pre></div>
+          </div>
+        </div>
+        <div class="accordion-item col-lg-6">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <b>Code of the project</b>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><pre><code>
+                package main
+
+                import (
+                    "bufio"
+                    "database/sql" // Contains funcs to open, prepare, query, manipulate the database and more.
+                    "fmt"
+                    "os"
+                    "time"
+                
+                    _ "github.com/go-sql-driver/mysql" // A MySQL-Driver for Go's database/sql package
+                )
+                
+                var selected_option int
+                
+                var newTask Task
+                
+                // checkErr checks if there is an error and panics if it is the case.
+                func checkErr(err error) {
+                    if err != nil {
+                        panic(err)
+                    }
+                }
+                
+                type Task struct {
+                    ID          int
+                    Name_task   string
+                    Description string
+                    Responsable string
+                    Completed   bool
+                }
+                
+                // CREATE storage new inputs from the user and create new task.
+                func Create(t Task) (e error) {
+                    db, err := sql.Open("mysql", "root:<yourpassword>.@tcp(127.0.0.1:3306)/")
+                    checkErr(err)
+                
+                    defer db.Close()
+                
+                    // Selected database.
+                    _, err = db.Exec("USE to_do_list")
+                    checkErr(err)
+                
+                    // We prepare for the input in order to prevent SQL injections.
+                    prepareSentence, err := db.Prepare("INSERT INTO tasks (ID, name_task, description, responsable, completed) VALUES(?,?, ?,?,?)")
+                    checkErr(err)
+                
+                    defer prepareSentence.Close()
+                    // Execute sentence for every '?'
+                    _, err = prepareSentence.Exec(t.ID, t.Name_task, t.Description, t.Responsable, t.Completed)
+                    checkErr(err)
+                
+                    return nil
+                }
+                
+                // READ selects rows from the MySQL table "to_do_list", reads it, scans it and returns a slice of the tasks.
+                func Read() ([]Task, error) {
+                
+                    var tasks []Task
+                
+                    // Open db.
+                    db, err := sql.Open("mysql", "root:Pepperonipizza123.@tcp(127.0.0.1:3306)/")
+                    checkErr(err)
+                    defer db.Close()
+                
+                    // Selected database.
+                    _, err = db.Exec("USE to_do_list")
+                    checkErr(err)
+                
+                    // We execute a query iterating over all the rows.
+                    rows, err := db.Query("SELECT * FROM tasks")
+                    checkErr(err)
+                    defer rows.Close()
+                
+                    var t Task
+                
+                    // We read all the rows asigning the values to t (type Task))
+                    // Then, append the values to tasks and returning it.
+                    for rows.Next() {
+                        err = rows.Scan(&t.ID, &t.Name_task, &t.Description, &t.Responsable, &t.Completed)
+                        checkErr(err)
+                        tasks = append(tasks, t)
+                    }
+                
+                    return tasks, nil
+                
+                }
+                
+                // UPDATE selects some task and modifies it.
+                func Update(n Task) error {
+                
+                    // Connected to MySQL database.
+                    db, err := sql.Open("mysql", "root:Pepperonipizza123.@tcp(127.0.0.1:3306)/to_do_list")
+                    checkErr(err)
+                
+                    // Close db after use.
+                    defer db.Close()
+                
+                    preparedSentence, err := db.Prepare("UPDATE tasks SET name_task = ?, description = ?, responsable = ?, completed = ? WHERE id = ?")
+                    checkErr(err)
+                
+                    defer preparedSentence.Close()
+                
+                    _, err = preparedSentence.Exec(n.Name_task, n.Description, n.Responsable, n.Completed, n.ID)
+                    checkErr(err)
+                    return nil
+                }
+                
+                // DELETE selects some task and remove it from the db.
+                func Delete(n Task) error {
+                    // Connected to MySQL database.
+                    db, err := sql.Open("mysql", "root:Pepperonipizza123.@tcp(127.0.0.1:3306)/to_do_list")
+                    checkErr(err)
+                
+                    // Close db after use.
+                    defer db.Close()
+                
+                    preparedSentence, err := db.Prepare("DELETE FROM tasks WHERE ID = ?")
+                    checkErr(err)
+                
+                    defer preparedSentence.Close()
+                
+                    _, err = preparedSentence.Exec(n.ID)
+                    checkErr(err)
+                
+                    return nil
+                }
+                
+                func main() {
+                
+                    // Connected to MySQL database.
+                    db, err := sql.Open("mysql", "root:<yourpassword>.@tcp(127.0.0.1:3306)/")
+                    checkErr(err)
+                
+                    // Close db after use.
+                    defer db.Close()
+                
+                    // Created To Do List Database.
+                    _, err = db.Exec("CREATE DATABASE if not exists to_do_list")
+                    checkErr(err)
+                
+                    // Selected database.
+                    _, err = db.Exec("USE to_do_list")
+                    checkErr(err)
+                
+                    // Created table where the data is going to storaged and retrieved.
+                    _, err = db.Exec("CREATE TABLE IF NOT EXISTS tasks (ID tinyint NOT NULL auto_increment, name_task tinytext NOT NULL, description tinytext NOT NULL, responsable tinytext NOT NULL, completed bool not null, primary key (ID))")
+                    checkErr(err)
+                
+                    fmt.Println("")
+                    fmt.Println("WELCOME TO TO_DO_LIST APP BY ZETACODER.")
+                    fmt.Println("CREATE NEW TASKS TO DO, MODIFY IT AND DELETE IT ONCE COMPLETED.ENJOY IT :D")
+                    menu := `
+                What do you want to do: 
+                (1) NEW TASK.
+                (2) SHOW ALL.
+                (3) MODIFY.
+                (4) COMPLETE.
+                (5) DELETE.
+                (6) EXIT APP.
+                `
+                
+                // Show menu and depending of the option, execute the CRUD funcs.
+                for selected_option != 6 {
+                        fmt.Println("")
+                        fmt.Println(menu)
+                        fmt.Scan(&selected_option)
+                        scanner := bufio.NewScanner(os.Stdin)
+                
+                switch selected_option {
+                // Create new task
+                    case 1:
+                        fmt.Println("Name of the task:")
+                            if scanner.Scan() {
+                                newTask.Name_task = scanner.Text()
+                            }
+                        fmt.Println("")
+                
+                        fmt.Println("Description:")
+                            if scanner.Scan() {
+                                newTask.Description = scanner.Text()
+                            }
+                
+                        fmt.Println("Person responsable:")
+                        time.Sleep(1 * time.Second)
+                            if scanner.Scan() {
+                                newTask.Responsable = scanner.Text()
+                            }
+                
+                        Create(newTask)
+                        time.Sleep(1 * time.Second)
+                        fmt.Println("TASK ADDED SUCCESFULLY!")
+                        time.Sleep(1 * time.Second)
+                // Show all tasks
+                    case 2:
+                        tasks, err := Read()
+                        if err != nil {
+                            fmt.Printf("Cant get tasks: %v", err)
+                        } else {
+                            for _, task := range tasks {
+                                fmt.Println("====================")
+                                fmt.Printf("ID: %d\n", task.ID)
+                                fmt.Printf("Name of task: %s\n", task.Name_task)
+                                fmt.Printf("Description: %s\n", task.Description)
+                                fmt.Printf("Responsable: %s\n", task.Responsable)
+                                fmt.Printf("Completed: %v\n", task.Completed)
+                            }
+                        }
+                    case 3:
+                        fmt.Println("Choose the ID of the task to modify:")
+                        fmt.Scanln(&newTask.ID)
+                        fmt.Println("Enter new task name:")
+                        if scanner.Scan() {
+                            newTask.Name_task = scanner.Text()
+                        }
+                        fmt.Println("Enter new description:")
+                        if scanner.Scan() {
+                            newTask.Description = scanner.Text()
+                        }
+                        fmt.Println("Enter the new responsable of the task:")
+                        if scanner.Scan() {
+                            newTask.Responsable = scanner.Text()
+                        }
+                        err := Update(newTask)
+                        if err != nil {
+                            fmt.Printf("Error updating: %v", err)
+                        } else {
+                            time.Sleep(1 * time.Second)
+                            fmt.Println("TASK UPDATED SUCCESFULLY")
+                            time.Sleep(1 * time.Second)
+                        }
+                    case 4:
+                        fmt.Println("Choose the ID of the task you completed:")
+                        fmt.Scanln(&newTask.ID)
+                        Delete(newTask) // Mark as completed
+                        fmt.Printf("Congratulations! Task %d marked as completed", newTask.ID)
+                        time.Sleep(1 * time.Second)
+                    case 5:
+                        fmt.Println("Choose the ID of the task you want to remove:")
+                        fmt.Scanln(&newTask.ID)
+                        Delete(newTask) // task deleted
+                        fmt.Println("Task removed from the list.")
+                        time.Sleep(1 * time.Second)
+                    case 6:
+                        fmt.Println("See ya!")
+                        time.Sleep(1 * time.Second)
+                        os.Exit(0)
+                        }
+                    }
+                }
+            </code></pre></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+         
+        <a target="_blank" href="https://github.com/zetacoder/to-do-list/blob/main/to-do-list/main.go" ><h3 class="view_it_github">View it on github</h3></a>
+        <a target="_blank" href="https://github.com/zetacoder/to-do-list/blob/main/to-do-list/main.go"><img width="50" class="github_icon" src="/img/github_icon.png"></a>
+    
+      </div>
+      <!--Ideas & code base End-->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
